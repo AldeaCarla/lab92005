@@ -6,9 +6,9 @@ public class PatrateDistincte {
         List<Integer> listaInitiala = Arrays.asList(9, 10, 3, 4, 7, 3, 4);
 
         List<Integer> listaPatrate = listaInitiala.stream()
-                .distinct()                    // elimină duplicatele
-                .map(x -> x * x)              // calculează pătratul fiecărui element
-                .collect(Collectors.toList()); // colectează într-o listă nouă
+                .distinct()
+                .map(x -> x * x)
+                .collect(Collectors.toList());
 
         System.out.println("Lista inițială: " + listaInitiala);
         System.out.println("Lista cu pătrate distincte: " + listaPatrate);
